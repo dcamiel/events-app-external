@@ -14,8 +14,8 @@ describe('GET /', function () {
       .reply(200, {
         "status": 200,
         "events": [
-          { "title": 'an event', "id": 1234, "description": 'something really cool' },
-          { "title": 'another event', id: 5678, "description": 'something even cooler' }
+          { "title": 'an event', "id": 1234, "description": 'something really cool', "location": "some location" },
+          { "title": 'another event', id: 5678, "description": 'something even cooler', "location": "different location" }
         ]
       });
 
@@ -73,8 +73,8 @@ describe('POST /event', function () {
       .reply(200, {
         "status": 200,
         "events": [
-          { title: 'an event', id: 1, description: 'something really cool' },
-          { title: 'another event', id: 2, description: 'something even cooler' },
+          { title: 'an event', id: 1, description: 'something really cool', 'location': 'some location' },
+          { title: 'another event', id: 2, description: 'something even cooler', 'location': 'different location' },
           data
         ]
       });
